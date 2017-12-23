@@ -1,7 +1,7 @@
 import React from 'react';
 
-export class Bestiary extends React.Component {
-  render () {
+class Bestiary extends React.Component {
+  render() {
     return (
       <div>
         <h1>Bestiary</h1>
@@ -17,3 +17,5 @@ export class Bestiary extends React.Component {
     );
   }
 }
+
+export default Bestiary;

@@ -16,8 +16,8 @@ module.exports = {
   },
   output: {
     path: DIST_DIR,
-    filename: 'bundle.js'
-    // publicPath: '/'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     loaders: [
@@ -52,6 +52,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback : true
+  },
   plugins: [
       new ExtractTextPlugin({
         filename: "main.css",
@@ -59,7 +62,8 @@ module.exports = {
         allChunks: true
       }),
       new HtmlWebpackPlugin({
-        template: 'src/index.html'
+        template: 'src/index.html',
+        inject: false
       }),
       new CleanWebpackPlugin(['dist'])
     ]
