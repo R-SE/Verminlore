@@ -1,4 +1,8 @@
-@import "_variables.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+
+
 
 body {
   background: url('assets/images/darkwood.jpg') no-repeat center center fixed $black;
@@ -10,12 +14,25 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 10px;
+  bottom: 0px;
   right: 0;
   border: 5px solid black;
-
-  background: url('assets/images/lorebook_md.png') no-repeat center center fixed;
-
+  @include mobile {
+    background: url('assets/images/parchment.png') no-repeat center center;
+    background-size: 100%;
+  }
+  @include tablet {
+    background: url('assets/images/lorebook_tablet.png') no-repeat right bottom fixed;
+    background-size: 100%;
+  }
+  @include laptop {
+    background: url('assets/images/lorebook_sm.png') no-repeat right bottom fixed;
+    background-size: 100%;
+  }
+  @include desktop {
+    background: url('assets/images/lorebook_lg.png') no-repeat right bottom fixed;
+    background-size: contain;
+  }
 }
 
 h1 {
