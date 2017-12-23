@@ -11,7 +11,7 @@ import Footer from './modules/Footer';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Main />
         <Footer />
       </div>

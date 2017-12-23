@@ -8,7 +8,7 @@ class Main extends React.Component {
   render() {
     return (
         <BrowserRouter>
-          <div>
+          <div className="main">
             <ul>
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/dossier">Dossier</NavLink></li>
