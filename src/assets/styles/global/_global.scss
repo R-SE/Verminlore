@@ -1,39 +1,22 @@
 @import "./_variables.scss";
 @import "./_mixins.scss";
-
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lateef');
 
 
 
 body {
   background: url('assets/images/darkwood.jpg') no-repeat center center fixed $black;
   background-size: cover;
-}
-
-
-.main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0px;
-  right: 0;
-  border: 5px solid black;
-  @include mobile {
-    background: url('assets/images/parchment.png') no-repeat center center;
-    background-size: 100%;
-  }
-  @include tablet {
-    background: url('assets/images/lorebook_tablet.png') no-repeat right bottom fixed;
-    background-size: 100%;
-  }
-  @include laptop {
-    background: url('assets/images/lorebook_sm.png') no-repeat right bottom fixed;
-    background-size: 100%;
-  }
-  @include desktop {
-    background: url('assets/images/lorebook_lg.png') no-repeat right bottom fixed;
-    background-size: contain;
+  font-family: 'Lateef', cursive;
+  p {
+    font-size: 1.5em;
   }
 }
+
+.stylizedText {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
 
 h1 {
   background-color: $red;

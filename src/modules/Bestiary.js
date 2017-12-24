@@ -3,7 +3,7 @@ import React from 'react';
 class Bestiary extends React.Component {
   render() {
     return (
-      <div>
+      <article className="bestiary">
         <h1>Bestiary</h1>
         <p>Anim id laborum, qui laborum familiaritatem, aut de ipsum laboris, export
           nescius fabulas est ab dolore praesentibus, ullamco irure velit de quae, ut o
@@ -13,7 +13,7 @@ class Bestiary extends React.Component {
           illum et quae sed nescius cillum dolore deserunt cillum qui multos
           instituendarum proident illum fabulas ex export sed ita quae probant, ipsum
         laborum eu deserunt.</p>
-      </div>
+      </article>
     );
   }
 }

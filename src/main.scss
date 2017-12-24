@@ -5,7 +5,10 @@
 @import "./assets/styles/global/_global";
 @import "./assets/styles/global/_mixins";
 @import "./assets/styles/global/_variables";
+@import "./assets/styles/global/_images";
 
 // MODULES
+@import "./assets/styles/modules/_main";
 @import "./assets/styles/modules/_header";
 @import "./assets/styles/modules/_footer";
+@import "./assets/styles/modules/_dossier";
